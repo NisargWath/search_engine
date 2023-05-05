@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front End Search Implementation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/f0120799c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css">
+
+    <style>
+        .mp {
+            position: absolute;
+            bottom: 222px;
+            left: 45%;
+            padding: 10px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container container-homepage">
+        <div class="homepage-logo">
+            <img src="/static/images/ds_circle_logo.png" alt="ds_circle_logo">
+        </div>
+
+
+        <div class="search-bar homepage-search-bar">
+            <form method="GET" action="{{ url_for('search') }}">
+                <input type="text" name="query" placeholder="&#xf002; Search any word">
+                <br>
+                <br>
+                <button class=" btn btn-primary mp " style="border-radius: 6px; " type="submit">Search</button>
+            </form>
+        </div>
+
+
+        <div class="recent-posts-wrapper">
+            <div class="recent-posts-heading">
+                Recent Posts
+            </div>
+
+            <div class="recent-posts">
+                <div class="recent-post">
+                    <div class="recent-post-title">
+                        Create rendering to Search the result Writen With Help of Flask
+
+                    </div>
+
+                    <div class="recent-post-title">
+                        Guide By Priti Ma'am
+
+                        <div class="recent-post-category">
+
+                        </div>
+                    </div>
+                    <div class="recent-post-title">
+                        Created By :- Aditya Ghuge and Shripad Kulkarni
+
+                        <div class="recent-post-category">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

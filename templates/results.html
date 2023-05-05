@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/f0120799c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css">
+
+</head>
+
+<body>
+
+    <div class="container container-results">
+        <div class="results-logo">
+            <img src="/static/images/ds_circle_logo.png" alt="ds_circle_logo">
+        </div>
+
+        <div class="search-bar results-search-bar">
+            <input type="text" placeholder="&#xf002; Search DailySmarty" value="{{request.args.get('query')}}">
+        </div>
+
+        <div class="results-posts-wrapper">
+            <h1>Results Page</h1>
+            <h1>{{ summary }}</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
